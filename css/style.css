@@ -1,0 +1,38 @@
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: .12rem;
+  display: flex;
+  flex-direction: column; }
+
+.header {
+  display: flex;
+  height: .4rem;
+  border-bottom: 1px solid #eee;
+  position: relative; }
+  .header p {
+    flex: 1;
+    text-align: center;
+    line-height: .4rem; }
+    .header p span {
+      font-size: .14rem; }
+  .header p:hover span {
+    color: skyblue; }
+  .header p:nth-child(1):hover ~ b {
+    transform: translateX(0); }
+  .header p:nth-child(2):hover ~ b {
+    transform: translateX(100%); }
+  .header p:nth-child(3):hover ~ b {
+    transform: translateX(200%); }
+  .header b {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 33%;
+    height: .02rem;
+    background-color: skyblue;
+    transition: all 1s; }
+
+/*# sourceMappingURL=style.css.map */
